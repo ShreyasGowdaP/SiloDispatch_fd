@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dispatch Dashboard</title>
+    <link rel="stylesheet" href="frontend.css">
+</head>
+<body>
+<div class="dashboard">
+    <h1>Silo Dispatch Dashboard</h1>
+
+    <!-- CSV Upload Section -->
+    <section class="card">
+        <h2>Upload Orders CSV</h2>
+        <form id="uploadForm">
+            <input type="file" id="csvFile" name="file" accept=".csv" required>
+            <button type="submit">Upload CSV</button>
+            <div id="uploadResponse" class="response"></div>
+        </form>
+    </section>
+
+    <!-- Batch Generation Section -->
+    <section class="card">
+        <h2>Generate Order Batches</h2>
+        <button id="generateBtn">Generate Batches</button>
+        <div id="batchResponse" class="response"></div>
+    </section>
+
+    <!-- Driver Assignment Section -->
+    <section class="card">
+        <h2>Assign Batches to Drivers</h2>
+        <form id="driverForm">
+            <div id="driverList" class="checkbox-group">
+                <!-- Static driver list (mock) -->
+                <label><input type="checkbox" value="101"> Driver 101</label>
+                <label><input type="checkbox" value="102"> Driver 102</label>
+                <label><input type="checkbox" value="103"> Driver 103</label>
+                <label><input type="checkbox" value="104"> Driver 104</label>
+            </div>
+            <button type="submit">Assign Batches</button>
+            <div id="assignResponse" class="response"></div>
+        </form>
+    </section>
+</div>
+
+<script src="frontend.js"></script>
+</body>
+</html>

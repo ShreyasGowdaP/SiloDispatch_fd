@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assign Drivers</title>
+    <link rel="stylesheet" href="DriverAssignmentController.css">
+</head>
+<body>
+<div class="container">
+    <h2>Assign Batches to Drivers</h2>
+    <form id="driverForm">
+        <div class="checkbox-group">
+            <!-- Mock driver IDs -->
+            <label><input type="checkbox" value="101"> Driver 101</label>
+            <label><input type="checkbox" value="102"> Driver 102</label>
+            <label><input type="checkbox" value="103"> Driver 103</label>
+            <label><input type="checkbox" value="104"> Driver 104</label>
+        </div>
+        <button type="submit">Assign Batches</button>
+    </form>
+    <div id="responseMessage"></div>
+</div>
+
+<script src="DriverAssignmentController.js"></script>
+</body>
+</html>
